@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>平方完成の解説</title>
+</head>
+<body>
+    <h1>平方完成の解説</h1>
+    <p>平方完成は、2次方程式や2次関数の式を変形して「平方の形」にする方法です。この手法を使うと、グラフの頂点の座標を簡単に求めたり、解の公式を導出したりできます。</p>
+    <h2>一般的な2次式</h2>
+    <p>2次式の一般的な形は次のようになります。</p>
+    <p><strong>\( ax^2 + bx + c \)</strong> （ここで \( a \neq 0 \)）</p>
+
+    <h2>平方完成の手順</h2>
+    <ol>
+        <li>
+            <strong>係数 \(a\) を外に出す</strong><br>
+            まず、\(a\) を括り出します。<br>
+            \( ax^2 + bx + c = a(x^2 + \frac{b}{a}x) + c \)
+        </li>
+        <li>
+            <strong>\(x^2 + \frac{b}{a}x\) を平方の形にする</strong><br>
+            \(\left(x + p\right)^2 = x^2 + 2px + p^2\) の形を利用して、平方を作ります。<br>
+            \( x^2 + \frac{b}{a}x = \left(x + \frac{b}{2a}\right)^2 - \left(\frac{b}{2a}\right)^2 \)
+        </li>
+        <li>
+            <strong>元の式に代入して整理する</strong><br>
+            \( ax^2 + bx + c = a\left[\left(x + \frac{b}{2a}\right)^2 - \left(\frac{b}{2a}\right)^2\right] + c \)<br>
+            \( = a\left(x + \frac{b}{2a}\right)^2 - a\left(\frac{b}{2a}\right)^2 + c \)
+        </li>
+        <li>
+            <strong>定数項をまとめる</strong><br>
+            \( ax^2 + bx + c = a\left(x + \frac{b}{2a}\right)^2 + \left(c - \frac{b^2}{4a}\right) \)
+        </li>
+    </ol>
+
+    <h2>例: \( x^2 + 4x + 5 \) の平方完成</h2>
+    <ol>
+        <li><strong>係数を確認</strong><br>
+            \( a = 1, b = 4, c = 5 \)。係数 \(a\) はそのまま。
+        </li>
+        <li><strong>平方の形に変形</strong><br>
+            \( x^2 + 4x = \left(x + 2\right)^2 - 2^2 = \left(x + 2\right)^2 - 4 \)
+        </li>
+        <li><strong>定数項を足す</strong><br>
+            \( x^2 + 4x + 5 = \left(x + 2\right)^2 - 4 + 5 = \left(x + 2\right)^2 + 1 \)
+        </li>
+    </ol>
+
+    <h2>平方完成の結果</h2>
+    <p>\( x^2 + 4x + 5 = \left(x + 2\right)^2 + 1 \)</p>
+    <p>これにより、頂点の座標は \((-2, 1)\)、グラフの形が明確になります。</p>
+
+    <h2>応用</h2>
+    <ul>
+        <li>2次関数の頂点を求める</li>
+        <li>2次方程式の解を求める</li>
+        <li>物理学や経済学の最適化問題</li>
+    </ul>
+</body>
+</html>
