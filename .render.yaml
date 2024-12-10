@@ -1,0 +1,4 @@
+static:
+  env: static
+  buildCommand: ""
+  publishPath: public
