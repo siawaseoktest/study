@@ -3,60 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>平方完成の解説</title>
+    <title>二次関数の解説</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        .example {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-left: 4px solid #007BFF;
+            margin: 20px 0;
+        }
+        code {
+            background-color: #eaeaea;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        .formula {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            font-family: monospace;
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
-    <h1>平方完成の解説</h1>
-    <p>平方完成は、2次方程式や2次関数の式を変形して「平方の形」にする方法です。この手法を使うと、グラフの頂点の座標を簡単に求めたり、解の公式を導出したりできます。</p>
-    <h2>一般的な2次式</h2>
-    <p>2次式の一般的な形は次のようになります。</p>
-    <p><strong>ax<sup>2</sup> + bx + c</strong> （ここで a ≠ 0）</p>
+    <h1>二次関数の解説</h1>
+    <p>
+        二次関数とは、次の形で表される関数です：
+    </p>
+    <div class="formula">
+        y = ax<sup>2</sup> + bx + c &nbsp; (a ≠ 0)
+    </div>
+    <p>ここで、<code>a</code>, <code>b</code>, <code>c</code> は定数で、<code>a ≠ 0</code> が条件です。</p>
 
-    <h2>平方完成の手順</h2>
-    <ol>
-        <li>
-            <strong>係数 a を外に出す</strong><br>
-            まず、a を括り出します。<br>
-            ax<sup>2</sup> + bx + c = a(x<sup>2</sup> + (b/a)x) + c
-        </li>
-        <li>
-            <strong>x<sup>2</sup> + (b/a)x を平方の形にする</strong><br>
-            (x + p)<sup>2</sup> = x<sup>2</sup> + 2px + p<sup>2</sup> の形を利用して、平方を作ります。<br>
-            x<sup>2</sup> + (b/a)x = (x + b/2a)<sup>2</sup> - (b/2a)<sup>2</sup>
-        </li>
-        <li>
-            <strong>元の式に代入して整理する</strong><br>
-            ax<sup>2</sup> + bx + c = a[(x + b/2a)<sup>2</sup> - (b/2a)<sup>2</sup>] + c<br>
-            = a(x + b/2a)<sup>2</sup> - a(b/2a)<sup>2</sup> + c
-        </li>
-        <li>
-            <strong>定数項をまとめる</strong><br>
-            ax<sup>2</sup> + bx + c = a(x + b/2a)<sup>2</sup> + (c - b<sup>2</sup>/4a)
-        </li>
-    </ol>
-
-    <h2>例: x<sup>2</sup> + 4x + 5 の平方完成</h2>
-    <ol>
-        <li><strong>係数を確認</strong><br>
-            a = 1, b = 4, c = 5。係数 a はそのまま。
-        </li>
-        <li><strong>平方の形に変形</strong><br>
-            x<sup>2</sup> + 4x = (x + 2)<sup>2</sup> - 2<sup>2</sup> = (x + 2)<sup>2</sup> - 4
-        </li>
-        <li><strong>定数項を足す</strong><br>
-            x<sup>2</sup> + 4x + 5 = (x + 2)<sup>2</sup> - 4 + 5 = (x + 2)<sup>2</sup> + 1
-        </li>
-    </ol>
-
-    <h2>平方完成の結果</h2>
-    <p>x<sup>2</sup> + 4x + 5 = (x + 2)<sup>2</sup> + 1</p>
-    <p>これにより、頂点の座標は (-2, 1)、グラフの形が明確になります。</p>
-
-    <h2>応用</h2>
+    <h2>二次関数の特徴</h2>
+    <h3>1. グラフの形</h3>
     <ul>
-        <li>2次関数の頂点を求める</li>
-        <li>2次方程式の解を求める</li>
-        <li>物理学や経済学の最適化問題</li>
+        <li>二次関数のグラフは放物線になります。</li>
+        <li><code>a &gt; 0</code> のとき、グラフは上に開いた形（下に凸）。</li>
+        <li><code>a &lt; 0</code> のとき、グラフは下に開いた形（上に凸）。</li>
+    </ul>
+
+    <h3>2. 頂点と対称軸</h3>
+    <ul>
+        <li>放物線には対称性があり、対称軸は次の式で表されます：<br>
+            <div class="formula">x = -b / (2a)</div>
+        </li>
+        <li>頂点はグラフの最も高い点または低い点で、その座標は次の通りです：<br>
+            <div class="formula">頂点の座標: (-b / (2a), c - b<sup>2</sup> / (4a))</div>
+        </li>
+    </ul>
+
+    <h3>3. x切片とy切片</h3>
+    <ul>
+        <li><strong>x切片：</strong> \(x\)-軸との交点は、方程式 <code>ax<sup>2</sup> + bx + c = 0</code> を解くことで求められます。</li>
+        <li><strong>y切片：</strong> \(y\)-軸との交点は、<code>x = 0</code> を代入して求めます。その値は次の通りです：<br>
+            <div class="formula">y = c</div>
+        </li>
+    </ul>
+
+    <h2>例題</h2>
+    <div class="example">
+        <p>次の二次関数について考えます：</p>
+        <div class="formula">y = x<sup>2</sup> - 4x + 3</div>
+        <ol>
+            <li>対称軸： <code>x = -(-4) / (2 * 1) = 2</code></li>
+            <li>頂点：<br>
+                <code>x = 2</code> を代入すると、<code>y = 2<sup>2</sup> - 4(2) + 3 = -1</code>。<br>
+                したがって、頂点の座標は <code>(2, -1)</code>。</li>
+            <li>y切片：<br>
+                <code>x = 0</code> を代入すると、<code>y = 3</code>。</li>
+        </ol>
+        <p>このグラフは、頂点が <code>(2, -1)</code> にあり、対称軸は <code>x = 2</code> です。</p>
+    </div>
+
+    <h2>まとめ</h2>
+    <p>二次関数の重要なポイント：</p>
+    <ul>
+        <li>放物線の形は定数 <code>a</code> の符号によって決まる。</li>
+        <li>頂点と対称軸を求めることで、グラフの形状を理解しやすくなる。</li>
+        <li>y切片やx切片も、グラフの特徴を把握する上で重要。</li>
     </ul>
 </body>
 </html>
